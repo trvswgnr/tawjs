@@ -3,10 +3,6 @@ import { Modules } from './modules/modules';
 
 class Taw extends Modules {}
 
-
-
-
-
 const TAW_LIBRARY = (function () {
   const x = {
     get(selector) {

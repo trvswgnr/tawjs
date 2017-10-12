@@ -1,6 +1,4 @@
-//import { Constructor } from './constructor';
-
-export const Utilities = Base => class extends Base {
+export class Utilities {
   forEach(callback) {
     this.map(callback);
     return this;
@@ -18,4 +16,4 @@ export const Utilities = Base => class extends Base {
     const m = this.map(callback);
     return m.length > 1 ? m : m[0];
   }
-};
+}

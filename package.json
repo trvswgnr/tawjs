@@ -1,0 +1,21 @@
+{
+  "name": "tawjs",
+  "version": "1.0.0",
+  "description": "A library of useful JavaScript functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Travis A. Wagner",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-es6-module-transpiler": "^0.2.2",
+    "gulp-sourcemaps": "^2.6.1",
+    "recast": "^0.12.7"
+  },
+  "dependencies": {}
+}

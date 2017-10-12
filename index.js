@@ -1,7 +1,7 @@
 import { ieArrayPoly } from './modules/poly';
-import { DOM } from './modules/dom';
+import { Modules } from './modules/modules';
 
-class Taw extends DOM {}
+class Taw extends Modules {}
 
 Taw.prototype.on = ((() => {
   if (document.addEventListener) {
@@ -83,8 +83,8 @@ const TAW_LIBRARY = (function () {
   return x;
 }());
 
-const taw = TAW_LIBRARY.get;
+if (!window.hasOwnProperty( "taw" )) {
+  var taw = TAW_LIBRARY.get;
+}
 
 
-
-taw('#block').remove();

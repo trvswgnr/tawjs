@@ -1,6 +1,6 @@
-import { Utilities } from './utilities';
+//import { Utilities } from './utilities';
 
-export class DOM extends Utilities {
+export const DOM = Base => class extends Base {
 
   // DOM MANIPULATION
   // ---------------------------------------------- //
@@ -79,4 +79,4 @@ export class DOM extends Utilities {
   remove() {
     return this.forEach(el => el.parentNode.removeChild(el));
   }
-}
+};

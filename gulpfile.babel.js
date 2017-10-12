@@ -6,7 +6,7 @@ import sourcemaps from 'gulp-sourcemaps';
 import transpile from 'gulp-es6-module-transpiler';
 
 gulp.task('build', function () {
-  return gulp.src('./index.js')
+  return gulp.src('./js/index.js')
     .pipe(sourcemaps.init())
     .pipe(transpile({
       formatter: 'bundle'

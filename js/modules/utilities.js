@@ -18,9 +18,4 @@ export class Utilities {
     const m = this.map(callback);
     return m.length > 1 ? m : m[0];
   }
-
-  mergeClasses(baseClass, ...mixins) {
-    return classes(baseClass, mixins);
-  }
-
 }

@@ -1,5 +1,6 @@
 import { Init } from './modules/init';
 import { methods } from './modules/methods';
+import global from './modules/global';
 
 // initialize library
 const tawJS = (x) => new Init(x);
@@ -11,5 +12,6 @@ for (let method in methods) {
 
 // common name for library
 const taw = tawJS;
+let num = 500;
 
-console.log();
+console.log(num.formatCurrency());

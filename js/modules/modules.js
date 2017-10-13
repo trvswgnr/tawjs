@@ -1,5 +1,3 @@
-import { polyfills } from './polyfills';
-
 import { Constructor } from './constructor';
 import { Utilities } from './utilities';
 import { DOM } from './dom';

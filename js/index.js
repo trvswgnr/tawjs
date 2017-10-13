@@ -1,3 +1,5 @@
+import { polyfills } from './polyfills';
+
 import { Init } from './modules/init';
 import { methods } from './modules/methods';
 import global from './modules/global';

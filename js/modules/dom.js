@@ -2,6 +2,24 @@ export class DOM {
 
   // DOM MANIPULATION
   // ---------------------------------------------- //
+
+  css(param, value = false) {
+    if (typeof param === "object") {
+
+      this.forEach(el => {
+        for (let key in param) {
+          el.style[key] = param[key];
+        }
+      });
+
+    } else {
+      this.forEach(el => {
+        el.style[param] = value;
+      });
+    }
+    return this;
+  }
+
   text(text) {
     if (typeof text !== "undefined") {
       return this.forEach(el => {
